@@ -10,4 +10,4 @@ class Domain(db.Model):
     last_checked = db.Column(db.DateTime, default=datetime.utcnow)
     
     def __repr__(self):
-        return f"Domain('{self.domain_name}', '{self.notbeforce}', '{self.notaffter}', '{self.remaining}')"
+        return f"Domain('{self.domain_name}', '{self.notbefore}', '{self.notafter}', '{self.remaining}', '{self.last_checked}')"
